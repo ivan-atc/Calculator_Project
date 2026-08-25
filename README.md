@@ -29,9 +29,15 @@ https://www.icloud.com/iclouddrive/031MlcVB423hHol48JCXcvvqw#MinGW
 For Usage, there is some modifications that must be made in the launch.json & the task.json files:
   ### In launch.json:
   In the "programm", "cwd", "value", "miDebuggerPath" sections, remplace the current paths with the current directory in which all the downloaded similar files are located 
+  <img width="2140" height="1238" alt="image" src="https://github.com/user-attachments/assets/15ffdfb6-39c4-4f83-a9b0-35d62731e262" />
+
 
   ### In task.json:
   In both "command", "cwd" and "PATH" sections, remplace also the current paths with the current directory in which all the dowloaded similar files are located 
+  <img width="2132" height="1156" alt="image" src="https://github.com/user-attachments/assets/240e07e6-7251-42b3-adc9-e1b0aada016d" />
+  <img width="2146" height="1230" alt="image" src="https://github.com/user-attachments/assets/fdc38f95-54c0-4c08-9eed-c81dab9a3fa9" />
+
+
     
 
 2) The official Java interpreter does not come natively with the required JavaFx libraries.
