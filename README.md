@@ -19,19 +19,19 @@ Following these steps must display the user calculation prompt on the calculator
 ## Installtion Required
 The only installation requires for this project are a modified version of the GCC compiler (originally from CodeBlocks), the official JDK interpreter for Java alongside with JavaFX modules.
 
-### Note:
+### Please Note:
 1) The MinGW compiler must be displaced within the workspace folder (i.e in the "\.vscode" folder).
 <img width="2862" height="1682" alt="image" src="https://github.com/user-attachments/assets/d3d8e21f-927d-4fcb-bfb9-5a1169c8ca1b" />
 
 Below is the repository of the modified version of the GCC compiler attached in a ZIP:
 https://www.icloud.com/iclouddrive/031MlcVB423hHol48JCXcvvqw#MinGW
 
-  For Usage, there is some modifications that must be made in the launch.json & the task.json files:
+For Usage, there is some modifications that must be made in the launch.json & the task.json files:
   ### In launch.json:
   In the "programm", "cwd", "value", "miDebuggerPath" sections, remplace the current paths with the current directory in which all the downloaded similar files are located 
 
-  ###In task.json:
-    In both "command", "cwd" and "PATH" sections, remplace also the current paths with the current directory in which all the dowloaded similar files are located 
+  ### In task.json:
+  In both "command", "cwd" and "PATH" sections, remplace also the current paths with the current directory in which all the dowloaded similar files are located 
     
 
 2) The official Java interpreter does not come natively with the required JavaFx libraries.
