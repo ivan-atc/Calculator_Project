@@ -1,0 +1,51 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Run JavaFX Calculator",
+            "type": "java",
+            "request": "launch",
+            "mainClass": "com.gui_calculator.Main",
+            "projectName": "gui_calculator_maven",
+            "cwd": "${workspaceFolder}/gui_calculator_maven",
+            "preLaunchTask": "copy-javafx-dependencies",
+            "vmArgs": "--module-path ${workspaceFolder}/gui_calculator_maven/target/lib --add-modules javafx.controls"
+        },
+        {
+            "name": "Debug Kernel",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:\\Users\\atche\\iCloudDrive\\WORK\\Projets\\Calculator_Project\\kernel.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "C:\\Users\\atche\\iCloudDrive\\WORK\\Projets\\Calculator_Project",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "C:\\Users\\atche\\iCloudDrive\\WORK\\Projets\\Calculator_Project\\MinGW\\bin;${env:PATH}"
+                }
+            ],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "preLaunchTask": "Build Kernel",
+            "miDebuggerPath": "C:\\Users\\atche\\iCloudDrive\\WORK\\Projets\\Calculator_Project\\MinGW\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Run GUI + Kernel",
+            "configurations": [
+                "Run JavaFX Calculator",
+                "Debug Kernel"
+            ]
+        }
+    ]
+}

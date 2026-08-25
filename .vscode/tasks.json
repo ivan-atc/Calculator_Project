@@ -1,0 +1,55 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "copy-javafx-dependencies",
+            "type": "shell",
+            "command": "mvn -q -DskipTests dependency:copy-dependencies -DincludeGroupIds=org.openjfx -DoutputDirectory=target/lib",
+            "options": {
+                "cwd": "${workspaceFolder}/gui_calculator_maven"
+            },
+            "problemMatcher": []
+        },
+        
+        { //Build the CPP file
+            "type": "cppbuild",
+            "label": "Build Kernel",
+            "command": "C:\\Users\\atche\\iCloudDrive\\WORK\\Projets\\Calculator_Project\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-std=c++17",
+                "-static",
+                "-static-libgcc",
+                "-static-libstdc++",
+                "${workspaceFolder}\\kernel.cpp",
+                "-o",
+                "${workspaceFolder}\\kernel.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "detail": "Builds the C++ calculator kernel explicitly."
+        },
+        {
+            "label": "Build and Run Kernel", //Build and Run the CPP file
+            "type": "shell",
+            "command": "C:\\Users\\atche\\iCloudDrive\\WORK\\Projets\\Calculator_Project\\kernel.exe",
+            "dependsOn": "Build Kernel",
+            "dependsOrder": "sequence",
+            "options": {
+                "cwd": "C:\\Users\\atche\\iCloudDrive\\WORK\\Projets\\Calculator_Project",
+                "env": {
+                    "PATH": "C:\\Users\\atche\\iCloudDrive\\WORK\\Projets\\Calculator_Project\\MinGW\\bin;${env:PATH}"
+                }
+            },
+            "problemMatcher": []
+        }
+    ]
+}

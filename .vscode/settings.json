@@ -1,0 +1,9 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.configuration.updateBuildFiles": true,
+    "java.maven.downloadSources": true,
+    "C_Cpp.default.compilerPath": "${workspaceFolder}\\MinGW\\bin\\g++.exe",
+    "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+    "chat.agent.enabled": true,
+    "C_Cpp.errorSquiggles": "disabled"
+}
