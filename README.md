@@ -21,26 +21,26 @@ The only installation requires for this project are a modified version of the GC
 
 ### Note:
 1) The MinGW compiler must be displaced within the workspace folder (i.e in the "\.vscode" folder).
-<img width="796" height="446" alt="image" src="https://github.com/user-attachments/assets/123f9c87-bf17-4853-be4e-3bf771e9f1cd" />
+<img width="2862" height="1682" alt="image" src="https://github.com/user-attachments/assets/d3d8e21f-927d-4fcb-bfb9-5a1169c8ca1b" />
 
 Below is the repository of the modified version of the GCC compiler attached in a ZIP:
 https://www.icloud.com/iclouddrive/031MlcVB423hHol48JCXcvvqw#MinGW
 
-    For Usage, there is some modifications that must be made in the launch.json & the task.json files:
-    #### In launch.json:
-    In the "programm", "cwd", "value", "miDebuggerPath" sections, remplace the current paths with the current directory in which all the dowloaded similar files are located 
+  For Usage, there is some modifications that must be made in the launch.json & the task.json files:
+  ### In launch.json:
+  In the "programm", "cwd", "value", "miDebuggerPath" sections, remplace the current paths with the current directory in which all the downloaded similar files are located 
 
-    #### In task.json:
+  ###In task.json:
     In both "command", "cwd" and "PATH" sections, remplace also the current paths with the current directory in which all the dowloaded similar files are located 
     
 
 2) The official Java interpreter does not come natively with the required JavaFx libraries.
-In case, below is the link of the JavaFx libraries, to be included in the ("lib") folder of the openJDK folder:
+In case, below is the link of the JavaFx libraries, to be included in the ("lib") folder of your openJDK folder configured in VSCode:
 https://gluonhq.com/products/javafx/
-<img width="706" height="314" alt="image" src="https://github.com/user-attachments/assets/d2b0be50-f39c-4989-aa49-d53c65b97754" />
 
 ## How to Use It
 For best compability with the "\.vscode" folder, the Visual Code Studio text editor from Microsoft should be used.
 For best usage during execution, the CMD must be utilised as a split window with the GUI to understand the result of the calculator.
-<img width="2874" height="1696" alt="image" src="https://github.com/user-attachments/assets/a94a52ec-d2d4-40ef-b113-349555ce35bf" />
+<img width="2880" height="1698" alt="image" src="https://github.com/user-attachments/assets/fca34e56-5072-43ab-b24d-880e176746d7" />
+
 
