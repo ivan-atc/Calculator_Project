@@ -4,7 +4,8 @@ This folder repository contains a software project, being a virtual calculator, 
 
 The project contains two main parts:
 - A basic input output system (coded in C++), generating a file (representing an operating system)
-- A GUI programm (coded in Java), responsible for the display of the application
+- A GUI program (coded in Java), responsible for the display of the application
+- A Java program intended to make the program acting as an On-Screen Keyboard to the C++ generated application 
   
 ## Project Operation
 During the execution of the entire project, the C++ should display a ON-screen terminal, with visible requests for the user to enter some data. This follows the execution of an ON-screen GUI that represents the calculator. Both part are intended to work nearly simultaneously.
