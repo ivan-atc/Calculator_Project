@@ -3,14 +3,14 @@
 This folder repository contains a software project, being a virtual calculator, that is aiming to perform simple arithmetic tasks (i.e addition, subtraction, multiplication, division).
 
 The project contains three main parts:
-- A basic input output system (coded in C++)
+- A basic input output system (coded in C++).
 The virtual BIOS was coded with a set of function calls that mimic real calculation functionalities. In particular, it uses the integrated CLI of the compiler to perform any calculation.
 For interacting with the GUI, it generates a temporary file holding the user calculation.
 
-- A GUI program (coded in Java), responsible for the display of the application
+- A GUI program (coded in Java), responsible for the display of the application.
 The GUI role was extended to not only display the calculator GUI, but also read the file generating by the virtual BIOS. The reading operation was set to allow the calculator to display the instantaneous calculation in the input field of the virtual GUI.
 
-- A Java program intended to make the program acting as an On-Screen Keyboard to the C++ generated application
+- A Java program intended to make the program acting as an On-Screen Keyboard to the C++ generated application.
 This was required as the keyboard of the GUI should be used to interact with the BIOS CLI to mimic the operation of a calculator. Hence, it was developed as a complete separate class, with an instance created in the GUI code. It allowed the cursor to be directed to the CLI whilst the GUI keyboards were pressed.
   
 ## Project Operation
